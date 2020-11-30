@@ -23,7 +23,7 @@ pipeline {
 
 			stage('Trufflehog'){
     				steps{
-    				sh 'docker run --name truffle abhishekakuthota/mytag2:latest --regex --entropy=False "https://github.com/RahulSapparapu/iiitbfeedback/ "|| true '
+    				sh 'docker run --name truffle abhishekakuthota/mytag2:latest --regex --entropy=False "https://github.com/RahulSapparapu/iiitbfeedback"|| true '
     				sh 'docker rm truffle || true'
     						}
    					}
